@@ -22,7 +22,7 @@ Identyfikator NFC dla psa połączony z mobilnym profilem kontaktowym. Projekt o
 
 ### [Muza](https://github.com/lbudzynowski/muza-showcase)
 
-Prywatny, lokalny system wspierający synchronizację kontekstu, dokumentację roboczą i automatyzację zadań. Publiczne repo pokazuje architekturę bez ujawniania pełnych źródeł.
+Osobista asystentka AI rozwijana jako lokalna aplikacja dla Ubuntu, a docelowo także jako niewielkie fizyczne urządzenie w drukowanej obudowie. Projekt łączy interfejs rozmowy, pamięć, głos, osobowość, lokalne integracje oraz ciągłość relacji człowieka z AI.
 
 ### [Ubuntu Desktop Tools](https://github.com/lbudzynowski/ubuntu-tools-showcase)
 
