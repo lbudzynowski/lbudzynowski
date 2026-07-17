@@ -1,47 +1,66 @@
 # Łukasz Budzynowski
 
-**Projektowanie, wdrażanie, utrzymanie i rozwój systemów informatycznych**
+**Systemy informatyczne • Linux i Python • automatyzacja • CI/CD • bezpieczeństwo**
 
-Łączę doświadczenie w systemach publicznych, utrzymaniu środowisk, automatyzacji Linux oraz tworzeniu niewielkich produktów i narzędzi od pomysłu do działającego wdrożenia.
+Projektuję, wdrażam, rozwijam i utrzymuję systemy informatyczne — od analizy potrzeb, dokumentacji i wyboru wykonawców, przez odbiory i uruchomienia, po monitoring, utrzymanie środowisk produkcyjnych oraz dalszy rozwój.
+
+Łączę wieloletnie doświadczenie w systemach publicznych z praktycznym tworzeniem narzędzi dla Ubuntu, automatyzacją procesów oraz budowaniem niewielkich produktów od pomysłu do działającego wydania.
 
 ## Obszary
 
-- architektura i rozwój systemów IT;
-- integracje, utrzymanie i środowiska chmurowe;
-- Linux, Python, Bash i automatyzacja;
+- architektura, wdrażanie, utrzymanie i rozwój systemów IT;
+- przygotowanie dokumentacji, wymagań, OPZ i kryteriów oceny;
+- prowadzenie odbiorów i współpraca z wykonawcami;
+- Linux, Python, Bash, GTK i automatyzacja;
 - monitoring, niezawodność i dokumentacja operacyjna;
-- Git, GitHub, GitLab i CI/CD;
-- WCAG, UX i testy bezpieczeństwa;
-- OpenSCAD i prototypowanie 3D.
+- GitHub Actions, GitLab CI/CD i zarządzanie kodem;
+- środowiska chmurowe, integracje i bezpieczeństwo aplikacji;
+- WCAG, UX oraz testy bezpieczeństwa;
+- analiza i planowanie zgodności z wymaganiami NIS2/KSC;
+- OpenSCAD, druk 3D i szybkie prototypowanie.
 
-## Wybrane projekty
+## Najnowszy projekt
 
-### [Yeti Smart Tag](https://github.com/lbudzynowski/yeti-smart-tag-showcase)
+### [Codex Usage Tray](https://github.com/lbudzynowski/codex-usage-tray)
 
-Identyfikator NFC dla psa połączony z mobilnym profilem kontaktowym. Projekt obejmuje stronę, konfigurację danych, model OpenSCAD, druk 3D, testy NFC, proces produkcji i model biznesowy.
+Publiczny wskaźnik dla Ubuntu GNOME pokazujący wykorzystanie limitów OpenAI Codex.
 
-### [Muza](https://github.com/lbudzynowski/muza-showcase)
+Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, testy jednostkowe, GitHub Actions, instalacyjną paczkę `.deb`, autostart GNOME, stronę podręcznika oraz publiczne wydania.
 
-Osobista asystentka AI rozwijana jako lokalna aplikacja dla Ubuntu, a docelowo także jako niewielkie fizyczne urządzenie w drukowanej obudowie. Projekt łączy interfejs rozmowy, pamięć, głos, osobowość, lokalne integracje oraz ciągłość relacji człowieka z AI.
-
-### [Ubuntu Desktop Tools](https://github.com/lbudzynowski/ubuntu-tools-showcase)
-
-Własne narzędzia Python/GTK: wskaźniki VPN i zapory, monitoring usług, integracje z systemami oraz powiadomienia lokalne i mobilne.
-
-### [IT Systems — Case Studies](https://github.com/lbudzynowski/it-systems-case-studies)
-
-Doświadczenie w tworzeniu założeń i dokumentacji, wdrażaniu, rozwijaniu i utrzymywaniu systemów publicznych.
+[![Latest release](https://img.shields.io/github/v/release/lbudzynowski/codex-usage-tray)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
+[![Tests](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml/badge.svg)](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/codex-usage-tray/blob/main/LICENSE)
 
 ## Doświadczenie
 
-Tworzyłem założenia i dokumentację systemów informatycznych, uczestniczyłem w wyborze wykonawców, prowadziłem odbiory oraz rozwijałem i utrzymywałem rozwiązania we współpracy z wykonawcami i zespołami merytorycznymi. Pracowałem między innymi przy systemach ZRK, ELA, rozwiązaniach ZSK oraz wdrożeniu EZD RP.
+Tworzyłem założenia i dokumentację systemów informatycznych, uczestniczyłem w wyborze wykonawców, prowadziłem odbiory oraz rozwijałem i utrzymywałem rozwiązania we współpracy z wykonawcami i zespołami merytorycznymi.
 
-## Prywatne źródła
+Pracowałem między innymi przy:
 
-Pełne repozytoria części projektów pozostają prywatne ze względu na bezpieczeństwo, dane i komercyjny charakter prac. Publiczne repozytoria prezentują architekturę, rezultaty i oczyszczone materiały.
+- Zintegrowanym Rejestrze Kwalifikacji — ZRK;
+- systemie Ekonomicznych Losów Absolwentów — ELA;
+- rozwiązaniach Zintegrowanego Systemu Kwalifikacji — ZSK;
+- wdrożeniu i utrzymaniu EZD RP;
+- systemach webowych, środowiskach chmurowych, integracjach i automatyzacji procesów operacyjnych.
+
+## Własne narzędzia
+
+Rozwijam narzędzia Python/GTK dla Ubuntu, między innymi:
+
+- wskaźniki VPN, zapory i usług systemowych;
+- monitoring dostępności aplikacji i infrastruktury;
+- integracje z systemami webowymi;
+- lokalne i mobilne powiadomienia;
+- automatyzację zadań administracyjnych;
+- narzędzia wspierające druk 3D i prototypowanie.
+
+## Technologie
+
+`Python` · `Bash` · `Linux` · `GTK` · `Git` · `GitHub Actions` · `GitLab CI/CD` · `Redmine` · `FastAPI` · `OpenSCAD`
 
 ## Kontakt
 
 - Warszawa, Polska
-- [LinkedIn](TU_WSTAW_LINK)
 - [E-mail](mailto:lbudzynowski@gmail.com)
+- [GitHub Sponsors](https://github.com/sponsors/lbudzynowski)
+- [PayPal](https://paypal.me/lbudzynowski)
