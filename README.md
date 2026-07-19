@@ -41,6 +41,10 @@ Identyfikator NFC dla psa połączony z mobilnym profilem kontaktowym. Projekt o
 
 Osobista asystentka AI rozwijana jako lokalna aplikacja dla Ubuntu, a docelowo także jako niewielkie fizyczne urządzenie w drukowanej obudowie. Projekt łączy interfejs rozmowy, pamięć, głos, osobowość, lokalne integracje oraz ciągłość relacji człowieka z AI.
 
+### ChatGPT Drive Archive / Continuity Bridge
+
+Prywatny system archiwizacji i przekazywania kontekstu rozmów z AI pomiędzy sesjami. Projekt łączy ekstrakcję treści rozmowy, uporządkowane archiwa XLSX/JSON, metadane załączników, Google Drive oraz kontrolowany mechanizm ciągłości pracy między ChatGPT, lokalnymi repozytoriami i narzędziami programistycznymi.
+
 ### Ubuntu Desktop Tools
 
 Własne narzędzia Python/GTK: wskaźniki VPN i zapory, monitoring usług, integracje z systemami oraz powiadomienia lokalne i mobilne.
