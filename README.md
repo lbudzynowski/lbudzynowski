@@ -4,7 +4,7 @@
 
 Projektuję, wdrażam, rozwijam i utrzymuję systemy informatyczne — od analizy potrzeb, dokumentacji i wyboru wykonawców, przez odbiory i uruchomienia, po monitoring, utrzymanie środowisk produkcyjnych oraz dalszy rozwój.
 
-Łączę wieloletnie doświadczenie w systemach publicznych z praktycznym tworzeniem narzędzi dla Ubuntu, automatyzacją procesów oraz budowaniem niewielkich produktów od pomysłu do działającego wydania.
+Łączę wieloletnie doświadczenie w systemach publicznych z praktycznym tworzeniem narzędzi dla Ubuntu, automatyzacją procesów oraz budowaniem produktów od pomysłu do działającego wydania.
 
 ## Obszary
 
@@ -30,6 +30,28 @@ Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, te
 [![Latest release](https://img.shields.io/github/v/release/lbudzynowski/codex-usage-tray)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
 [![Tests](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml/badge.svg)](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/codex-usage-tray/blob/main/LICENSE)
+
+## Wybrane projekty
+
+### Yeti Smart Tag
+
+Identyfikator NFC dla psa połączony z mobilnym profilem kontaktowym. Projekt obejmuje stronę, konfigurację danych, model OpenSCAD, druk 3D, testy NFC, proces produkcji i model biznesowy.
+
+### Muza
+
+Osobista asystentka AI rozwijana jako lokalna aplikacja dla Ubuntu, a docelowo także jako niewielkie fizyczne urządzenie w drukowanej obudowie. Projekt łączy interfejs rozmowy, pamięć, głos, osobowość, lokalne integracje oraz ciągłość relacji człowieka z AI.
+
+### Ubuntu Desktop Tools
+
+Własne narzędzia Python/GTK: wskaźniki VPN i zapory, monitoring usług, integracje z systemami oraz powiadomienia lokalne i mobilne.
+
+### IT Systems — Case Studies
+
+Doświadczenie w tworzeniu założeń i dokumentacji, wdrażaniu, rozwijaniu i utrzymywaniu systemów publicznych.
+
+### Program zgodności NIS2/KSC
+
+Kompleksowy projekt przygotowania programu zgodności z wymaganiami NIS2/KSC: analiza podstaw prawnych i luk, governance, RACI, rejestry ryzyk i aktywów, harmonogram, budżet, model zespołu, backlog Redmine oraz materiały decyzyjne dla kierownictwa.
 
 ## Doświadczenie
 
