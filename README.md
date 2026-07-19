@@ -27,7 +27,7 @@ Publiczny wskaźnik dla Ubuntu GNOME pokazujący wykorzystanie limitów OpenAI C
 
 Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, testy jednostkowe, GitHub Actions, instalacyjną paczkę `.deb`, autostart GNOME, stronę podręcznika oraz publiczne wydania.
 
-[![Latest release](https://img.shields.io/github/v/release/lbudzynowski/codex-usage-tray)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
+[![Latest release](https://img.shields.io/badge/release-v0.1.1-blue.svg)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
 [![Tests](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml/badge.svg)](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/codex-usage-tray/blob/main/LICENSE)
 
