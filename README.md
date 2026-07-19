@@ -45,6 +45,14 @@ Osobista asystentka AI rozwijana jako lokalna aplikacja dla Ubuntu, a docelowo t
 
 Prywatny system archiwizacji i przekazywania kontekstu rozmów z AI pomiędzy sesjami. Projekt łączy ekstrakcję treści rozmowy, uporządkowane archiwa XLSX/JSON, metadane załączników, Google Drive oraz kontrolowany mechanizm ciągłości pracy między ChatGPT, lokalnymi repozytoriami i narzędziami programistycznymi.
 
+### Leki 2.0
+
+Prywatna aplikacja do prowadzenia domowego magazynu leków, działająca na komputerze i telefonie. Łączy mobilny interfejs i dashboard Google Sheets/Apps Script z lokalnym skanerem kodów na Ubuntu, rejestrem stanów i ruchów, obsługą zakupów i remanentów oraz historią zmian.
+
+### Bambu A1 Filaments
+
+Prywatna aplikacja do zarządzania magazynem filamentów dla Bambu Lab A1 i AMS Lite, dostępna także przez interfejs mobilny. Ewidencjonuje fizyczne szpule i refille, producenta, materiał, rzeczywisty kolor, masę i tarę szpuli, lokalizację oraz ruchy i zużycie, a aktualny stan oblicza z historii operacji zamiast z samego slotu AMS.
+
 ### Ubuntu Desktop Tools
 
 Własne narzędzia Python/GTK: wskaźniki VPN i zapory, monitoring usług, integracje z systemami oraz powiadomienia lokalne i mobilne.
