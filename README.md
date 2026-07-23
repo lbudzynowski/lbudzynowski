@@ -1,10 +1,10 @@
 # Łukasz Budzynowski
 
-**Systemy informatyczne • Linux i Python • automatyzacja • CI/CD • bezpieczeństwo**
+**Systemy informatyczne • Linux i Python • automatyzacja • CI/CD • bezpieczeństwo • AI i embedded**
 
 Projektuję, wdrażam, rozwijam i utrzymuję systemy informatyczne — od analizy potrzeb, dokumentacji i wyboru wykonawców, przez odbiory i uruchomienia, po monitoring, utrzymanie środowisk produkcyjnych oraz dalszy rozwój.
 
-Łączę wieloletnie doświadczenie w systemach publicznych z praktycznym tworzeniem narzędzi dla Ubuntu, automatyzacją procesów oraz budowaniem produktów od pomysłu do działającego wydania.
+Łączę wieloletnie doświadczenie w systemach publicznych z praktycznym tworzeniem narzędzi dla Ubuntu, automatyzacją procesów oraz budowaniem produktów od pomysłu do działającego wydania. Rozwijam również aplikacje Android TV, rozwiązania e-paper/ESP32 i prywatne narzędzia wspierające bezpieczną pracę z AI.
 
 ## Obszary
 
@@ -17,15 +17,16 @@ Projektuję, wdrażam, rozwijam i utrzymuję systemy informatyczne — od analiz
 - środowiska chmurowe, integracje i bezpieczeństwo aplikacji;
 - WCAG, UX oraz testy bezpieczeństwa;
 - analiza i planowanie zgodności z wymaganiami NIS2/KSC;
-- OpenSCAD, druk 3D i szybkie prototypowanie.
+- Android TV, Kotlin, ESP32, e-paper i szybkie prototypowanie;
+- OpenSCAD i druk 3D.
 
-## Najnowszy projekt
+## Publiczny projekt
 
 ### [Codex Usage Tray](https://github.com/lbudzynowski/codex-usage-tray)
 
 Publiczny wskaźnik dla Ubuntu GNOME pokazujący wykorzystanie limitów OpenAI Codex.
 
-Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, testy jednostkowe, GitHub Actions, instalacyjną paczkę `.deb`, autostart GNOME, stronę podręcznika oraz publiczne wydania.
+Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, testy jednostkowe, GitHub Actions, instalacyjną paczkę `.deb`, autostart GNOME, stronę podręcznika oraz publiczne wydania. Aplikacja nie odczytuje plików uwierzytelniających ani tokenów — korzysta z obsługi logowania zarządzanej przez Codex.
 
 [![Latest release](https://img.shields.io/badge/release-v0.1.1-blue.svg)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
 [![Tests](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml/badge.svg)](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml)
@@ -33,17 +34,29 @@ Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, te
 
 ## Wybrane projekty
 
+### Dashboard kalendarza e-paper
+
+Urządzenie oparte na ESP32-S3 i panelu e-paper 3,97″, projektowane jako energooszczędny dashboard kalendarza Google na lodówkę lub biurko. Projekt obejmuje firmware ESP-IDF, inicjalizację zasilania AXP2101, pracę ekranu w orientacji pionowej, nawigację przyciskami, diagnostykę sprzętu oraz własny renderer UTF-8 z polskimi znakami i symbolami kalendarza.
+
+### Put.io Skip Intro TV
+
+Aplikacja Android TV / Google TV w Kotlinie dla telewizora Sony Bravia. Obsługuje parowanie z put.io, bezpieczne przechowywanie tokenu w Android Keystore, przeglądanie katalogów, bezpośrednie odtwarzanie z napisami oraz ręcznie zapisywane markery początku i końca intro. Przycisk „Pomiń intro” jest obsługiwany pilotem, a build i testy działają w GitHub Actions.
+
+### Repo Security Scanner
+
+Centralny, audit-only system cyklicznego sprawdzania bezpieczeństwa repozytoriów GitHub. Oddziela skanowanie, agregację raportów i prezentację wyników, wykorzystuje ustandaryzowane raporty JSON/SARIF i nie modyfikuje monitorowanego kodu. Pierwszy pilot uruchamia przypięty wersją i sumą kontrolną Gitleaks, redaguje wyniki, waliduje je względem JSON Schema i publikuje wyłącznie bezpieczny artefakt raportu.
+
 ### Yeti Smart Tag
 
-Identyfikator NFC dla psa połączony z mobilnym profilem kontaktowym. Projekt obejmuje stronę, konfigurację danych, model OpenSCAD, druk 3D, testy NFC, proces produkcji i model biznesowy.
+Identyfikator NFC dla psa połączony z mobilnym profilem kontaktowym. Działa bez baterii i instalowania aplikacji, a jego prototyp obejmuje stronę, konfigurację danych demonstracyjnych, fizyczny tag NTAG213, model OpenSCAD, druk 3D, testy NFC, proces produkcji i model biznesowy. Repozytorium nie przechowuje prawdziwych danych klientów.
 
-### Muza
+### Muza / MUSE-01
 
-Osobista asystentka AI rozwijana jako lokalna aplikacja dla Ubuntu, a docelowo także jako niewielkie fizyczne urządzenie w drukowanej obudowie. Projekt łączy interfejs rozmowy, pamięć, głos, osobowość, lokalne integracje oraz ciągłość relacji człowieka z AI.
+Modułowy projekt osobistej asystentki AI rozwijanej jako lokalna aplikacja dla Ubuntu, a docelowo także jako niewielki fizyczny robot drukowany w 3D. Działający prototyp Muza Desktop wykorzystuje Python, GTK 4 i przenośny rdzeń aplikacji, zachowując prywatne obrazy poza repozytorium oraz jawnie kontrolując przyszłe użycie mikrofonu, kamery i głosu.
 
 ### ChatGPT Drive Archive / Continuity Bridge
 
-Prywatny system archiwizacji i przekazywania kontekstu rozmów z AI pomiędzy sesjami. Projekt łączy ekstrakcję treści rozmowy, uporządkowane archiwa XLSX/JSON, metadane załączników, Google Drive oraz kontrolowany mechanizm ciągłości pracy między ChatGPT, lokalnymi repozytoriami i narzędziami programistycznymi.
+Prywatny system archiwizacji i przekazywania kontekstu rozmów z AI pomiędzy sesjami. Rozszerzenie Chrome MV3 wydobywa aktywną gałąź rozmowy do wersjonowanego JSON-u, zachowuje strukturę wiadomości, digesty i bezpieczne metadane oraz działa fail-closed przy niejednoznacznym DOM. Kolejny etap rozwija samodzielne pakiety rozmów `conversation.json + images/`, aktualizowane bez duplikatów i bez zapisywania tokenów lub podpisanych adresów URL.
 
 ### Leki 2.0
 
@@ -55,7 +68,7 @@ Prywatna aplikacja do zarządzania magazynem filamentów dla Bambu Lab A1 i AMS 
 
 ### Ubuntu Desktop Tools
 
-Własne narzędzia Python/GTK: wskaźniki VPN i zapory, monitoring usług, integracje z systemami oraz powiadomienia lokalne i mobilne.
+Własne narzędzia Python/GTK: wskaźniki VPN i zapory, monitoring usług, integracje z systemami, automatyzacja zadań administracyjnych oraz powiadomienia lokalne i mobilne.
 
 ### IT Systems — Case Studies
 
@@ -79,18 +92,19 @@ Pracowałem między innymi przy:
 
 ## Własne narzędzia
 
-Rozwijam narzędzia Python/GTK dla Ubuntu, między innymi:
+Rozwijam narzędzia i aplikacje, między innymi:
 
 - wskaźniki VPN, zapory i usług systemowych;
-- monitoring dostępności aplikacji i infrastruktury;
-- integracje z systemami webowymi;
+- monitoring dostępności aplikacji, workflow i infrastruktury;
+- integracje z systemami webowymi i API;
 - lokalne i mobilne powiadomienia;
 - automatyzację zadań administracyjnych;
-- narzędzia wspierające druk 3D i prototypowanie.
+- aplikacje telewizyjne i narzędzia dla urządzeń embedded;
+- rozwiązania wspierające druk 3D i prototypowanie.
 
 ## Technologie
 
-`Python` · `Bash` · `Linux` · `GTK` · `Git` · `GitHub Actions` · `GitLab CI/CD` · `Redmine` · `FastAPI` · `OpenSCAD`
+`Python` · `Bash` · `Linux` · `GTK 3/4` · `Git` · `GitHub Actions` · `GitLab CI/CD` · `Redmine` · `FastAPI` · `Kotlin` · `Android TV` · `ESP-IDF` · `ESP32-S3` · `OpenSCAD`
 
 ## Kontakt
 
