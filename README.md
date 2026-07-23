@@ -1,10 +1,20 @@
 # Łukasz Budzynowski
 
-**Systemy informatyczne • Linux i Python • automatyzacja • CI/CD • bezpieczeństwo • AI i embedded**
+**Senior IT Manager • IT Project Manager • System Owner • systemy publiczne • bezpieczeństwo • automatyzacja i AI**
 
 Projektuję, wdrażam, rozwijam i utrzymuję systemy informatyczne — od analizy potrzeb, dokumentacji i wyboru wykonawców, przez odbiory i uruchomienia, po monitoring, utrzymanie środowisk produkcyjnych oraz dalszy rozwój.
 
 Łączę wieloletnie doświadczenie w systemach publicznych z praktycznym tworzeniem narzędzi dla Ubuntu, automatyzacją procesów oraz budowaniem produktów od pomysłu do działającego wydania. Rozwijam również aplikacje Android TV, rozwiązania e-paper/ESP32 i prywatne narzędzia wspierające bezpieczną pracę z AI.
+
+## Otwarty na nowe możliwości / Open to opportunities
+
+**Senior IT Manager · IT Project Manager · System Owner**
+
+Jestem otwarty na rozmowy o rolach związanych z zarządzaniem systemami informatycznymi, transformacją cyfrową, ładem IT, bezpieczeństwem i zgodnością w organizacjach publicznych oraz regulowanych.
+
+Wnoszę ponad 20 lat doświadczenia w pełnym cyklu życia systemów — od analizy wymagań, dokumentacji, OPZ i wyboru wykonawców, przez wdrożenia i odbiory, po utrzymanie, rozwój, ciągłość działania i nadzór nad dostawcami. Łączę perspektywę zarządczą, biznesową i techniczną z praktycznym doświadczeniem w Linuxie, Pythonie, automatyzacji, CI/CD i bezpiecznym wykorzystaniu AI.
+
+**Warszawa / Warsaw, Poland · Polish · English C2**
 
 ## Obszary
 
@@ -80,7 +90,7 @@ Kompleksowy projekt przygotowania programu zgodności z wymaganiami NIS2/KSC: an
 
 ## Doświadczenie
 
-Tworzyłem założenia i dokumentację systemów informatycznych, uczestniczyłem w wyborze wykonawców, prowadziłem odbiory oraz rozwijałem i utrzymywałem rozwiązania we współpracy z wykonawcami i zespołami merytorycznymi.
+Tworzyłem założenia i dokumentację systemów informatycznych, przygotowywałem wymagania i kryteria wyboru wykonawców, prowadziłem odbiory oraz rozwijałem i utrzymywałem rozwiązania we współpracy z wykonawcami i zespołami merytorycznymi.
 
 Pracowałem między innymi przy:
 
