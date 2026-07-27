@@ -1,6 +1,6 @@
 # Łukasz Budzynowski
 
-**Senior IT Manager • IT Project Manager • System Owner • systemy publiczne • bezpieczeństwo • automatyzacja i AI**
+**Senior IT Manager • IT Project / Programme Manager • System Owner • Digital Transformation • IT Governance • Information Security**
 
 Projektuję, wdrażam, rozwijam i utrzymuję systemy informatyczne — od analizy potrzeb, dokumentacji i wyboru wykonawców, przez odbiory i uruchomienia, po monitoring, utrzymanie środowisk produkcyjnych oraz dalszy rozwój.
 
@@ -8,7 +8,7 @@ Projektuję, wdrażam, rozwijam i utrzymuję systemy informatyczne — od analiz
 
 ## Otwarty na nowe możliwości / Open to opportunities
 
-**Senior IT Manager · IT Project Manager · System Owner**
+**Senior IT Manager · Head of IT · IT Project / Programme Manager · System Owner**
 
 Jestem otwarty na rozmowy o rolach związanych z zarządzaniem systemami informatycznymi, transformacją cyfrową, ładem IT, bezpieczeństwem i zgodnością w organizacjach publicznych oraz regulowanych.
 
@@ -18,17 +18,16 @@ Wnoszę ponad 20 lat doświadczenia w pełnym cyklu życia systemów — od anal
 
 ## Obszary
 
-- architektura, wdrażanie, utrzymanie i rozwój systemów IT;
-- przygotowanie dokumentacji, wymagań, OPZ i kryteriów oceny;
-- prowadzenie odbiorów i współpraca z wykonawcami;
-- Linux, Python, Bash, GTK i automatyzacja;
-- monitoring, niezawodność i dokumentacja operacyjna;
-- GitHub Actions, GitLab CI/CD i zarządzanie kodem;
-- środowiska chmurowe, integracje i bezpieczeństwo aplikacji;
-- WCAG, UX oraz testy bezpieczeństwa;
-- analiza i planowanie zgodności z wymaganiami NIS2/KSC;
-- Android TV, Kotlin, ESP32, e-paper i szybkie prototypowanie;
-- OpenSCAD i druk 3D.
+- strategia IT, ład IT i transformacja cyfrowa;
+- zarządzanie projektami i programami oraz pełnym cyklem życia systemów;
+- przywództwo zespołowe, organizacja pracy i zarządzanie zmianą;
+- zarządzanie interesariuszami, dostawcami, ryzykiem i ciągłością działania;
+- przygotowanie wymagań, OPZ, kryteriów oceny i dokumentacji zamówień publicznych;
+- architektura, wdrażanie, utrzymanie, integracje i rozwój systemów IT;
+- środowiska chmurowe, monitoring, niezawodność i bezpieczeństwo aplikacji;
+- Linux, Python, Bash, GTK, automatyzacja oraz GitHub Actions/GitLab CI/CD;
+- WCAG, UX, testy bezpieczeństwa i analiza zgodności NIS2/KSC;
+- Android TV, Kotlin, ESP32, e-paper, OpenSCAD i druk 3D.
 
 ## Publiczny projekt
 
@@ -46,7 +45,7 @@ Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, te
 
 ### Dashboard kalendarza e-paper
 
-Urządzenie oparte na ESP32-S3 i panelu e-paper 3,97″, projektowane jako energooszczędny dashboard kalendarza Google na lodówkę lub biurko. Projekt obejmuje firmware ESP-IDF, inicjalizację zasilania AXP2101, pracę ekranu w orientacji pionowej, nawigację przyciskami, diagnostykę sprzętu oraz własny renderer UTF-8 z polskimi znakami i symbolami kalendarza.
+Urządzenie oparte na ESP32-S3 i panelu e-paper 3,97″, zaprojektowane jako energooszczędny dashboard Google Calendar na lodówkę lub biurko. Działający prototyp obejmuje provisioning Wi-Fi z konfiguracją zapisywaną w NVS, synchronizację NTP, pobieranie kalendarza przez certyfikatowo zweryfikowane HTTPS, ograniczony kontrakt JSON, własny renderer UTF-8 z polskimi znakami oraz bezpieczne dwuslotowe OTA z kontrolą tożsamości projektu, wersji, rozmiaru i SHA-256, zatwierdzaniem obrazu i obsługą rollbacku. Fizycznie zaliczono aktualizację OTA oraz testy odrzucenia przerwanego transferu, błędnego SHA-256 i niezgodnych wersji.
 
 ### Put.io Skip Intro TV
 
@@ -120,5 +119,8 @@ Rozwijam narzędzia i aplikacje, między innymi:
 
 - Warszawa, Polska
 - [E-mail](mailto:lbudzynowski@gmail.com)
+
+## Wsparcie projektów open source
+
 - [GitHub Sponsors](https://github.com/sponsors/lbudzynowski)
 - [PayPal](https://paypal.me/lbudzynowski)
