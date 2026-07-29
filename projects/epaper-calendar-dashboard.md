@@ -10,9 +10,9 @@ The original goal was deliberately practical: create an always-visible agenda fo
 >
 > **Current development:** stacked draft branches add persistent, physically initiated wireless OTA authorization, a battery and USB charging indicator, a dual-screen calendar and diagnostics interface, and a dedicated upcoming-appointments section. Automated tests and clean firmware builds have passed; the complete integrated workflow still requires hardware validation.
 
-![The current calendar prototype with the battery and USB charging indicator. Personal calendar data has been redacted.](../assets/epaper-calendar-dashboard/live-calendar-battery-redacted.jpg)
+![A live Google Calendar view on the e-paper prototype. Selected appointment and network details have been redacted.](../assets/epaper-calendar-dashboard/live-calendar-battery-redacted.jpg)
 
-*The current calendar prototype. Personal appointment details and network identifiers were removed before publication.*
+*A live calendar view on the physical prototype. Only selected appointment and network details were redacted before publication.*
 
 ## 1. Selecting the platform
 
