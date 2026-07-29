@@ -114,10 +114,11 @@ The following snapshots preserve the project’s physical development trail: the
 | ![Contrast and grayscale validation screen on the physical e-paper panel.](../assets/epaper-calendar-dashboard/development/contrast-grayscale-test.webp) | ![HTTP 302 calendar-fetch failure displayed on the physical prototype.](../assets/epaper-calendar-dashboard/development/http-302-failure.webp) |
 | *Lines, fills, a checkerboard and four gray levels were used to validate the real panel rather than relying on screenshots or simulator output.* | *The device exposed the Google Apps Script redirect problem directly on screen while Wi-Fi remained available.* |
 
-| Time synchronization failure |
-| --- |
-| ![Calendar-fetch failure caused by unsynchronized system time.](../assets/epaper-calendar-dashboard/development/time-not-synchronized.webp) |
-| *Certificate-verified HTTPS could not proceed until SNTP had established a sufficiently valid system clock.* |
+### Time synchronization failure
+
+![Clean reconstruction of the time-not-synchronized diagnostic shown on the e-paper prototype.](../assets/epaper-calendar-dashboard/development/time-not-synchronized.svg)
+
+*A clean reconstruction of the diagnostic shown on the physical prototype. Certificate-verified HTTPS could not proceed until SNTP had established a sufficiently valid system clock.*
 
 ### Polish-glyph debugging progression
 
