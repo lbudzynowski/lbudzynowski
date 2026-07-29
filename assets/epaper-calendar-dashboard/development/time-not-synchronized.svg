@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">Time synchronization failure diagnostic</title>
+  <desc id="desc">A clean reconstruction of the message shown by the physical e-paper prototype when calendar download could not start because system time was not synchronized.</desc>
+  <rect width="1000" height="620" fill="#e8e8e3"/>
+  <rect x="36" y="28" width="928" height="564" rx="18" fill="#f4f4ef" stroke="#222" stroke-width="8"/>
+  <rect x="60" y="52" width="880" height="516" fill="#ededE8" stroke="#888" stroke-width="2"/>
+  <g fill="#171717" font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="112" y="150" font-size="43">Błąd pobierania kalendarza</text>
+    <text x="112" y="235" font-size="42" font-family="DejaVu Sans Mono, monospace">time not synchronized</text>
+    <text x="112" y="385" font-size="38">Połączenie Wi-Fi działa.</text>
+    <text x="112" y="465" font-size="38">Sprawdź HTTPS i konfigurację źródła.</text>
+  </g>
+</svg>
