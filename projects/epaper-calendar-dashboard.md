@@ -2,17 +2,17 @@
 
 ## From hardware bring-up to secure wireless updates
 
-What began as a search for a compact, low-power Google Calendar display evolved into a fully tested embedded system built around a Waveshare ESP32-S3 development board and a 3.97-inch, 800 × 480 e-paper panel.
+What began as a search for a compact, low-power Google Calendar display evolved into a physically validated embedded baseline built around a Waveshare ESP32-S3 development board and a 3.97-inch, 800 × 480 e-paper panel.
 
 The original goal was deliberately practical: create an always-visible agenda for a refrigerator or desk, with excellent readability, very low standby power and no continuously illuminated screen. During development, the project grew into a broader embedded platform with Wi-Fi provisioning, live calendar data, Polish text rendering, battery monitoring, hardware diagnostics and rollback-protected firmware updates.
 
 > **Physically validated baseline:** Wi-Fi provisioning, NTP synchronization, live Google Calendar data over certificate-verified HTTPS, bounded JSON parsing, UTF-8 rendering with Polish characters, dual-slot OTA, candidate-image validation and automatic rollback.
 >
-> **Current development:** persistent, physically provisioned wireless OTA authorization, a battery and USB charging indicator, and a second diagnostics screen. These additions remain under review and hardware validation.
+> **Current development:** stacked draft branches add persistent, physically initiated wireless OTA authorization, a battery and USB charging indicator, a dual-screen calendar and diagnostics interface, and a dedicated upcoming-appointments section. Automated tests and clean firmware builds have passed; the complete integrated workflow still requires hardware validation.
 
-![The current calendar prototype with the battery and USB charging indicator. Personal calendar data has been redacted.](../assets/epaper-calendar-dashboard/live-calendar-battery-redacted.jpg)
+![A live Google Calendar view on the e-paper prototype. Selected appointment and network details have been redacted.](../assets/epaper-calendar-dashboard/live-calendar-battery-redacted.jpg)
 
-*The current calendar prototype. Personal appointment details and network identifiers were removed before publication.*
+*A live calendar view on the physical prototype. Only selected appointment and network details were redacted before publication.*
 
 ## 1. Selecting the platform
 
@@ -78,7 +78,7 @@ The Apps Script service reads a limited future window, sorts the events and retu
 
 The ESP32 stores Wi-Fi configuration in NVS, synchronizes time through NTP and fetches the feed only after time is valid enough for TLS certificate checks. The feed URL and access token remain outside the repository and are not printed in logs.
 
-The device also provides a physical recovery path: holding the BOOT control for five seconds clears saved Wi-Fi configuration and returns the board to provisioning mode.
+The device also provides a physical recovery path: after a normal startup, holding the BOOT control for five seconds clears saved Wi-Fi configuration and returns the board to provisioning mode.
 
 ## 5. Problems found only on real hardware
 
@@ -130,23 +130,31 @@ In every rejection case, the currently valid application remained selected and o
 
 ## 7. Current development stage
 
-The validated baseline is now being extended in two stacked development lines.
+The validated baseline is being extended through a stack of draft development branches. Each layer preserves the previous work while adding one independently testable capability.
 
-### Persistent, fully wireless OTA authorization
+### Persistent, physically initiated wireless OTA authorization
 
 The original local OTA endpoint generated a new bearer token on every boot and exposed it through the serial monitor. The network transfer was wireless, but obtaining the token still required USB.
 
-The replacement design introduces a persistent 256-bit secret stored in NVS. Initial provisioning is allowed only during a short window opened by physically booting the device with the BOOT control held. After this one-time migration, subsequent updates can be authorized over Wi-Fi without serial access, `esptool` or a USB cable.
+The draft implementation replaces that flow with a persistent 256-bit secret stored in a dedicated NVS namespace. The device must boot normally; BOOT must never be held during power-on or reset because GPIO0 is a strapping pin. After startup, holding BOOT for approximately two to three seconds and releasing it before five seconds opens a 120-second provisioning window. Holding it for five seconds remains exclusively the Wi-Fi credential reset gesture.
 
-The threat model is stated explicitly: authorization currently travels over local HTTP, so provisioning and updates are intended for a trusted or isolated LAN.
+During the physical window, `POST /ota/provision` stores the workstation-generated secret. Subsequent updates use authenticated `POST /ota` requests, while `GET /ota/status` exposes only non-sensitive state and the firmware version. After the one-time migration and pairing procedure, later firmware updates can be initiated over Wi-Fi without serial access, `esptool` or a USB cable.
 
-### Battery status and a second screen
+Authorization currently travels over local HTTP, while manifests and firmware images use certificate-verified HTTPS. The workflow is therefore intended for a trusted or isolated LAN; application-layer challenge-response or local TLS remains a possible future hardening step.
 
-The calendar header now has a phone-style battery indicator with proportional fill, percentage text and an independent USB charging symbol. The implementation uses the existing AXP2101 readings rather than estimating battery state from voltage, and it has host tests for boundary and invalid values.
+### Battery status, dual-screen diagnostics and appointments
 
-A second screen is also being developed for diagnostics and selected upcoming appointments. A physical button switches between the two full-screen views, while the normal calendar view refreshes its feed when the user returns to it.
+The integrated draft adds a phone-style battery indicator with proportional fill, percentage text and an independent USB charging symbol. It uses AXP2101 readings and includes host tests for boundary and invalid values.
 
-At the time of writing, these changes are still draft work. They have passed automated tests and clean builds, but they are intentionally not described as part of the physically validated baseline until the complete device workflow is tested again.
+The user interface consists of two full-screen views. The calendar screen retains the normal agenda and adds an upcoming-appointments section sourced from an optional, backward-compatible `appointments` field in the feed. The second screen is reserved for diagnostics such as Wi-Fi state, RSSI, IP address, NTP synchronization, firmware version, OTA state and calendar-fetch information.
+
+The official board-support-package wheel events for both Up and Down are implemented as navigation inputs with independent debouncing. Returning to the calendar triggers a fresh feed request while preserving the last valid data if the refresh fails. BOOT and Function are intentionally excluded from screen navigation.
+
+### Validation status
+
+The draft stack has passed host tests, Apps Script feed tests, source validation, formatting checks and clean ESP-IDF 5.5.5 builds. Build success is recorded separately from hardware success.
+
+The integrated work is not yet part of the physically validated baseline. Remaining end-to-end checks include installing the migration firmware on the target board, physically provisioning the OTA secret, completing an authenticated wireless update, observing `/ota/status` through reboot, validating the live appointments feed, confirming both wheel directions on the device, checking battery and USB states, and repeating rollback verification on the integrated image.
 
 ## Engineering approach
 
