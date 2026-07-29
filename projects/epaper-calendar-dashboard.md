@@ -10,7 +10,7 @@ The original goal was deliberately practical: create an always-visible agenda fo
 >
 > **Current development:** stacked draft branches add persistent, physically initiated wireless OTA authorization, a battery and USB charging indicator, a dual-screen calendar and diagnostics interface, and a dedicated upcoming-appointments section. Automated tests and clean firmware builds have passed; the complete integrated workflow still requires hardware validation.
 
-![A live Google Calendar view on the e-paper prototype. Selected appointment and network details have been redacted.](../assets/epaper-calendar-dashboard/live-calendar-battery-redacted.jpg)
+![A live Google Calendar view on the e-paper prototype. Selected appointment and network details have been redacted.](../assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp)
 
 *A live calendar view on the physical prototype. Only selected appointment and network details were redacted before publication.*
 
@@ -25,7 +25,7 @@ The first design decision was whether to use a smaller all-in-one 400 × 300 mod
 - physical controls, RTC, microSD and onboard environmental sensing;
 - enough screen area for a portrait-oriented agenda without reducing text to an unreadable size.
 
-![The development board, battery, speaker, cable and accessories as delivered.](../assets/epaper-calendar-dashboard/hardware-as-delivered.jpg)
+![The development board, battery, speaker, cable and accessories as delivered.](../assets/epaper-calendar-dashboard/hardware-as-delivered.webp)
 
 *The hardware package before the first custom firmware was flashed.*
 
@@ -53,7 +53,7 @@ Polish calendar data made UTF-8 support a product requirement rather than a cosm
 
 The first attempts produced visibly corrupted diacritics. Instead of hiding the defect, the project introduced a repeatable glyph-validation screen and used it to isolate rendering, bit-order and coordinate problems. The resulting renderer preserves UTF-8 boundaries and displays lowercase and uppercase Polish characters without external font files.
 
-![Before-and-after comparison of the Polish glyph renderer.](../assets/epaper-calendar-dashboard/polish-glyphs-before-after.jpg)
+![Before-and-after comparison of the Polish glyph renderer.](../assets/epaper-calendar-dashboard/polish-glyphs-before-after.webp)
 
 *An early corrupted renderer on the left and the validated glyph layout on the right.*
 

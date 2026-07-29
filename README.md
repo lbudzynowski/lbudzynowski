@@ -49,7 +49,7 @@ Urządzenie oparte na ESP32-S3 i panelu e-paper 3,97″, zaprojektowane jako ene
 
 Na osobnych draftowych gałęziach rozwijam trwale provisionowaną autoryzację późniejszych aktualizacji całkowicie przez Wi-Fi, wskaźnik baterii i ładowania USB, dwa pełnoekranowe widoki kalendarza i diagnostyki oraz wydzieloną sekcję najbliższych wizyt. Testy automatyczne i czyste buildy ESP-IDF są zaliczone; pełny zintegrowany przepływ pozostaje do ponownej walidacji na urządzeniu.
 
-![Działający dashboard Google Calendar na fizycznym prototypie e-paper. Wybrane dane wizyty i sieci zostały zredagowane.](assets/epaper-calendar-dashboard/live-calendar-battery-redacted.jpg)
+![Działający dashboard Google Calendar na fizycznym prototypie e-paper. Wybrane dane wizyty i sieci zostały zredagowane.](assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp)
 
 [Przeczytaj pełną historię projektu i zobacz galerię sprzętu →](projects/epaper-calendar-dashboard.md)
 
