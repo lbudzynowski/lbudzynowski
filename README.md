@@ -47,6 +47,10 @@ Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, te
 
 Urządzenie oparte na ESP32-S3 i panelu e-paper 3,97″, zaprojektowane jako energooszczędny dashboard Google Calendar na lodówkę lub biurko. Działający prototyp obejmuje provisioning Wi-Fi z konfiguracją zapisywaną w NVS, synchronizację NTP, pobieranie kalendarza przez certyfikatowo zweryfikowane HTTPS, ograniczony kontrakt JSON, własny renderer UTF-8 z polskimi znakami oraz bezpieczne dwuslotowe OTA z kontrolą tożsamości projektu, wersji, rozmiaru i SHA-256, zatwierdzaniem obrazu i obsługą rollbacku. Fizycznie zaliczono aktualizację OTA oraz testy odrzucenia przerwanego transferu, błędnego SHA-256 i niezgodnych wersji.
 
+Aktualna linia rozwojowa dodaje trwale provisionowaną autoryzację w pełni bezprzewodowego OTA, wskaźnik baterii i ładowania USB oraz drugi ekran diagnostyczny.
+
+[Przeczytaj pełną historię projektu i zobacz galerię sprzętu →](projects/epaper-calendar-dashboard.md)
+
 ### Put.io Skip Intro TV
 
 Aplikacja Android TV / Google TV w Kotlinie dla telewizora Sony Bravia. Obsługuje parowanie z put.io, bezpieczne przechowywanie tokenu w Android Keystore, przeglądanie katalogów, bezpośrednie odtwarzanie z napisami oraz ręcznie zapisywane markery początku i końca intro. Przycisk „Pomiń intro” jest obsługiwany pilotem, a build i testy działają w GitHub Actions.
