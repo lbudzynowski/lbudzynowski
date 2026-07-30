@@ -100,6 +100,33 @@ A short custom wait loop could stop SNTP before a valid time was obtained. It wa
 
 These corrections were validated on the physical board, not only in CI.
 
+## Development gallery
+
+The following snapshots preserve the project’s physical development trail: the factory firmware, the dedicated hardware probe, panel-characterization tests, failures discovered during live integration and the intermediate states of the Polish-glyph renderer.
+
+| Factory baseline | Hardware probe |
+| --- | --- |
+| ![Factory demonstration menu on the Waveshare e-paper board.](../assets/epaper-calendar-dashboard/development/factory-firmware-menu.webp) | ![Custom hardware-probe overview and controls screen.](../assets/epaper-calendar-dashboard/development/hardware-probe-overview.webp) |
+| *The vendor demonstration firmware confirmed that the display and controls were operational before the custom firmware was introduced.* | *The dedicated probe verified controls and board capabilities independently before they entered product code.* |
+
+| Panel validation | Redirect failure |
+| --- | --- |
+| ![Contrast and grayscale validation screen on the physical e-paper panel.](../assets/epaper-calendar-dashboard/development/contrast-grayscale-test.webp) | ![HTTP 302 calendar-fetch failure displayed on the physical prototype.](../assets/epaper-calendar-dashboard/development/http-302-failure.webp) |
+| *Lines, fills, a checkerboard and four gray levels were used to validate the real panel rather than relying on screenshots or simulator output.* | *The device exposed the Google Apps Script redirect problem directly on screen while Wi-Fi remained available.* |
+
+### Time synchronization failure
+
+![Clean reconstruction of the time-not-synchronized diagnostic shown on the e-paper prototype.](../assets/epaper-calendar-dashboard/development/time-not-synchronized.svg)
+
+*A clean reconstruction of the diagnostic shown on the physical prototype. Certificate-verified HTTPS could not proceed until SNTP had established a sufficiently valid system clock.*
+
+### Polish-glyph debugging progression
+
+| Coordinate overlap | Bitmap and bit-order corruption | Near-final embedded glyph set |
+| --- | --- | --- |
+| ![Overlapping Polish glyphs during an early renderer test.](../assets/epaper-calendar-dashboard/development/glyph-debug-overlap.webp) | ![Corrupted Polish glyph bitmaps during renderer debugging.](../assets/epaper-calendar-dashboard/development/glyph-debug-bit-order.webp) | ![Near-final embedded Polish glyph validation screen.](../assets/epaper-calendar-dashboard/development/glyph-debug-near-final.webp) |
+| *An early coordinate and layout fault caused glyphs to collide.* | *The next stage isolated bitmap interpretation and bit-order errors.* | *The corrected embedded glyphs were then validated in a repeatable test screen before integration into the calendar renderer.* |
+
 ## 6. Secure and recoverable OTA updates
 
 Once the live calendar was stable, the firmware moved from a factory-only partition layout to two 7 MiB application slots with OTA metadata and bootloader rollback enabled.
