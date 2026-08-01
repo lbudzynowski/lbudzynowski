@@ -29,7 +29,7 @@ Wnoszę ponad 20 lat doświadczenia w pełnym cyklu życia systemów — od anal
 - WCAG, UX, testy bezpieczeństwa i analiza zgodności NIS2/KSC;
 - Android TV, Kotlin, ESP32, e-paper, OpenSCAD i druk 3D.
 
-## Publiczny projekt
+## Publiczne projekty
 
 ### [Codex Usage Tray](https://github.com/lbudzynowski/codex-usage-tray)
 
@@ -40,6 +40,18 @@ Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, te
 [![Latest release](https://img.shields.io/badge/release-v0.1.1-blue.svg)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
 [![Tests](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml/badge.svg)](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/codex-usage-tray/blob/main/LICENSE)
+
+### [Bhola Pulse](https://github.com/lbudzynowski/bhola-pulse)
+
+Animowany dashboard telemetryczny dla Ubuntu GNOME na Wayland/XWayland. Jeden długo działający provider w Pythonie zasila atomowy cache JSON współdzielony przez przezroczyste instancje Conky na wszystkich monitorach aktywnych przy starcie.
+
+Projekt oferuje dwa niezależne style — graficzny **LARGE SHARP** oraz terminalowy **NERD MODE** — i pokazuje CPU, RAM, obciążenie, temperatury, dyski, zasilanie, statusy lokalnych usług oraz ograniczone czasowo testy sieci. Dane są celowo redagowane: cache nie zapisuje nazw interfejsów, hostów, argumentów procesów, prywatnych adresów URL, tokenów ani pełnego publicznego adresu IP.
+
+Wydanie obejmuje testowaną paczkę `.deb`, trwały wybór stylu w konfiguracji użytkownika, ścieżki zgodne z XDG, kontrolę sum SHA-256, testy Python/Bash, walidację rozpakowanej paczki w GitHub Actions i automatyczne wydania wersjonowane.
+
+[![Latest release](https://img.shields.io/github/v/release/lbudzynowski/bhola-pulse)](https://github.com/lbudzynowski/bhola-pulse/releases/latest)
+[![CI](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/bhola-pulse/blob/main/LICENSE)
 
 ## Wybrane projekty
 
