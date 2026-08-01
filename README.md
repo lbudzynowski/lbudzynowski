@@ -53,6 +53,19 @@ Wydanie obejmuje testowaną paczkę `.deb`, trwały wybór stylu w konfiguracji 
 [![CI](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/bhola-pulse/blob/main/LICENSE)
 
+<table>
+  <tr>
+    <td width="49%">
+      <a href="https://github.com/lbudzynowski/bhola-pulse/blob/main/docs/images/large-sharp.png"><img src="https://raw.githubusercontent.com/lbudzynowski/bhola-pulse/main/docs/images/large-sharp.png" alt="Bhola Pulse LARGE SHARP — graficzny dashboard telemetryczny Ubuntu" width="100%"></a><br>
+      <sub><strong>LARGE SHARP</strong> — graficzny widok bieżącej telemetrii systemu.</sub>
+    </td>
+    <td width="49%">
+      <a href="https://github.com/lbudzynowski/bhola-pulse/blob/main/docs/images/nerd-mode.png"><img src="https://raw.githubusercontent.com/lbudzynowski/bhola-pulse/main/docs/images/nerd-mode.png" alt="Bhola Pulse NERD MODE — terminalowy dashboard telemetryczny Ubuntu" width="100%"></a><br>
+      <sub><strong>NERD MODE</strong> — terminalowy widok w stylistyce BBS.</sub>
+    </td>
+  </tr>
+</table>
+
 ## Wybrane projekty
 
 ### Dashboard kalendarza e-paper
