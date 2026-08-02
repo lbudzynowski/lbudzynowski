@@ -52,6 +52,17 @@ Wydanie obejmuje testowaną paczkę `.deb`, trwały wybór stylu w konfiguracji 
 [![Latest release](https://img.shields.io/github/v/release/lbudzynowski/bhola-pulse)](https://github.com/lbudzynowski/bhola-pulse/releases/latest)
 [![CI](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/bhola-pulse/blob/main/LICENSE)
+[![Ubuntu PPA](https://img.shields.io/badge/PPA-lbudzynowski%2Fapps-E95420?logo=ubuntu&logoColor=white)](https://launchpad.net/~lbudzynowski/+archive/ubuntu/apps)
+
+**Instalacja i aktualizacje z PPA:**
+
+```bash
+sudo add-apt-repository ppa:lbudzynowski/apps
+sudo apt update
+sudo apt install bhola-pulse
+```
+
+Po dodaniu wspólnego PPA aplikacja instaluje się i aktualizuje standardowo przez APT.
 
 <table>
   <tr>
