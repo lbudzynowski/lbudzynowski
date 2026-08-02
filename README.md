@@ -40,6 +40,17 @@ Projekt obejmuje klienta lokalnego `codex app-server`, aplikację Python/GTK, te
 [![Latest release](https://img.shields.io/badge/release-v0.1.1-blue.svg)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
 [![Tests](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml/badge.svg)](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/codex-usage-tray/blob/main/LICENSE)
+[![Ubuntu PPA](https://img.shields.io/badge/PPA-lbudzynowski%2Fapps-E95420?logo=ubuntu&logoColor=white)](https://launchpad.net/~lbudzynowski/+archive/ubuntu/apps)
+
+**Instalacja i aktualizacje z PPA:**
+
+```bash
+sudo add-apt-repository ppa:lbudzynowski/apps
+sudo apt update
+sudo apt install codex-usage-tray
+```
+
+Codex Usage Tray jest publikowany we wspólnym `ppa:lbudzynowski/apps`, razem z Bhola Pulse. Wcześniejsze dedykowane PPA zostało wycofane i pozostaje dostępne wyłącznie jako archiwum historyczne.
 
 ### [Bhola Pulse](https://github.com/lbudzynowski/bhola-pulse)
 
