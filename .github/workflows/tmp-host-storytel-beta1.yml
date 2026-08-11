@@ -1,0 +1,61 @@
+name: TEMP host Storytel beta APK
+
+on:
+  push:
+    branches:
+      - 'tmp/storytel-beta1-host-20260811'
+
+permissions:
+  contents: write
+
+jobs:
+  host:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: tmp-storytel-beta1-20260811
+      APK: storytel-tv-player-0.1.0-beta.1.apk
+      ARTIFACT_ZIP_URL: 'https://sdmntpritalynorth.oaiusercontent.com/files/00000000-994c-8246-a0d3-05f50d34e91a/raw?se=2026-08-11T13%3A59%3A13Z&sp=r&sv=2026-02-06&sr=b&scid=22beb19c-c2b8-5d04-b141-913ce448e2ff&skoid=9b41a688-1b44-4731-856e-b0efcf3660ed&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-11T07%3A31%3A24Z&ske=2026-08-12T07%3A31%3A24Z&sks=b&skv=2026-02-06&sig=YGTYB5mUrUVYSo8RoPJDVLAH9OJUA%2BHVyd49kvL3%2Bbo%3D'
+    steps:
+      - name: Download signed workflow artifact ZIP and extract APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --max-time 120 "$ARTIFACT_ZIP_URL" -o artifact.zip
+          unzip -q artifact.zip
+          test -s "$APK"
+          HASH="$(sha256sum "$APK" | awk '{print $1}')"
+          test "$HASH" = 'cfe28b8f6459d8a64aeb5b67dd6a6889da65ef63c438c16494b97838c089b9f1'
+
+      - name: Publish temporary public prerelease asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
+          fi
+          gh release create "$TAG" "$APK" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target main \
+            --title 'Temporary Storytel TV beta install asset' \
+            --notes 'Temporary asset for private-repository TV smoke test. Remove after test.' \
+            --prerelease
+
+      - name: Verify anonymous public readback and report URL
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://github.com/lbudzynowski/lbudzynowski/releases/download/$TAG/$APK"
+          curl -fsSL --max-time 120 "$URL" -o readback.apk
+          HASH="$(sha256sum readback.apk | awk '{print $1}')"
+          test "$HASH" = 'cfe28b8f6459d8a64aeb5b67dd6a6889da65ef63c438c16494b97838c089b9f1'
+          printf '%s\n' "$URL" > result.txt
+          B64="$(base64 -w0 result.txt)"
+          gh api --method PUT \
+            -H 'Accept: application/vnd.github+json' \
+            "/repos/$GITHUB_REPOSITORY/contents/TEMP_STORYTEL_PUBLIC_URL.txt" \
+            -f message='Store verified temporary Storytel APK URL' \
+            -f content="$B64" \
+            -f branch='tmp/storytel-beta1-host-20260811' >/dev/null
