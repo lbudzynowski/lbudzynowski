@@ -1,0 +1,36 @@
+name: TEMP remove Storytel beta smoke-test hosting
+
+on:
+  push:
+    branches:
+      - 'tmp/cleanup-storytel-beta1-20260811'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TEMP_TAG: tmp-storytel-beta1-20260811
+      TEMP_ASSET_URL: https://github.com/lbudzynowski/lbudzynowski/releases/download/tmp-storytel-beta1-20260811/storytel-tv-player-0.1.0-beta.1.apk
+    steps:
+      - name: Remove temporary public release and tag, then prove absence
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release view "$TEMP_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null
+          gh release delete "$TEMP_TAG" --repo "$GITHUB_REPOSITORY" --cleanup-tag -y
+          if gh release view "$TEMP_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo 'Temporary release still exists after deletion.' >&2
+            exit 1
+          fi
+          code="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 "$TEMP_ASSET_URL")"
+          case "$code" in
+            404|410) ;;
+            *) echo "Temporary public APK still reachable: HTTP $code" >&2; exit 1 ;;
+          esac
+          echo 'Temporary Storytel public hosting removed and verified absent.'
