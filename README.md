@@ -88,6 +88,21 @@ Po dodaniu wspólnego PPA aplikacja instaluje się i aktualizuje standardowo prz
   </tr>
 </table>
 
+## Zgłoszenia do projektów zewnętrznych / Upstream contributions
+
+Poza własnymi repozytoriami zgłaszam odtwarzalne błędy, regresje, problemy dokumentacyjne i propozycje funkcji bezpośrednio w projektach, których używam. Poniżej pełna lista publicznych issues utworzonych z mojego konta w zewnętrznych repozytoriach:
+
+- **OpenAI / Codex**
+  - [#38863 — Codex Desktop on Linux defaults spellcheck to en-US and flags Polish text as misspelled](https://github.com/openai/codex/issues/38863)
+  - [#35928 — Remote Connections docs contradict the new `codex remote-control pair` CLI workflow](https://github.com/openai/codex/issues/35928)
+- **PrintStash**
+  - [#70 — Preserve the exact printed artifact/revision and slicer settings for Bambu external print jobs](https://github.com/xiao-villamor/PrintStash/issues/70)
+  - [#69 — Bambu LAN on Bambu A1 fails with Paho v2 callbacks, PUBACK handling, cleanup order, and partial MQTT reports](https://github.com/xiao-villamor/PrintStash/issues/69)
+- **CopyQ**
+  - [#1240 — No history after upgrade to Ubuntu 19.10](https://github.com/hluk/CopyQ/issues/1240) — historyczne zgłoszenie regresji po aktualizacji Ubuntu.
+- **WiFi Signal Strength GNOME extension**
+  - [#2 — Error](https://github.com/Tomin1/wifisignalstrength/issues/2) — historyczne zgłoszenie błędu kompatybilności na Ubuntu Bionic (`NMC.Client is undefined`).
+
 ## Wybrane projekty
 
 ### Dashboard kalendarza e-paper
