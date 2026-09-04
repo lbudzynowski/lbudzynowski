@@ -123,6 +123,8 @@ Projekt obejmuje fizyczny NTAG213, modele OpenSCAD i druk 3D, responsywny profil
 
 Profil może — po świadomym użyciu funkcji **„Udostępnij lokalizację”** — pobrać położenie telefonu, pozwolić wybrać opiekuna i uruchomić ścieżkę powiadomienia SMS z lokalizacją znalazcy. Przepływ został sprawdzony na rzeczywistym telefonie: SMS dotarł po użyciu tej funkcji; samo otwarcie profilu nie wysyła wiadomości.
 
+Równolegle testujemy rozwiązanie taga wykorzystujące wiadomości SMS jako dodatkowy kanał powiadomień.
+
 Architektura rozdziela publiczny kod, szablony i dane demonstracyjne od rzeczywistych danych właścicieli i zwierząt. Projekt służy również jako praktyczne laboratorium prywatności, bezpiecznych wdrożeń i integracji usług.
 
 ---
