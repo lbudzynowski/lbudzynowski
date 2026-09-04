@@ -86,7 +86,6 @@ sudo apt install bhola-pulse
 ### Storytel TV Player
 
 Nieoficjalny klient Android TV / Google TV do słuchania audiobooków Storytel, rozwijany i realnie testowany na Sony Bravia.
-
 Aplikacja obsługuje prawdziwe konto i półkę użytkownika, sterowanie pilotem, natywne odtwarzanie przez AndroidX Media3 / ExoPlayer, przewijanie oraz dwukierunkową synchronizację pozycji ze Storytel.
 
 Materiał sesji jest chroniony przez AES-256-GCM z kluczem w Android Keystore; cleartext HTTP i backup danych aplikacji są wyłączone. Projekt przeszedł utwardzanie bezpieczeństwa, Android lint, testy, GitHub Actions i proces stałego podpisywania wydań. Podpisana beta została fizycznie zainstalowana i zweryfikowana na Sony Bravia.
@@ -122,6 +121,8 @@ System identyfikatorów NFC dla psów połączonych z mobilnym profilem kontakto
 Projekt obejmuje fizyczny NTAG213, modele OpenSCAD i druk 3D, responsywny profil internetowy, generator wielu profili, prywatny lokalny CRM w Pythonie/SQLite oraz kontrolowany proces publikacyjny z walidacją danych.
 
 Profil może — po świadomym użyciu funkcji **„Udostępnij lokalizację”** — pobrać położenie telefonu, pozwolić wybrać opiekuna i uruchomić ścieżkę powiadomienia SMS z lokalizacją znalazcy. Przepływ został sprawdzony na rzeczywistym telefonie: SMS dotarł po użyciu tej funkcji; samo otwarcie profilu nie wysyła wiadomości.
+
+Równolegle testujemy rozwiązanie taga wykorzystujące wiadomości SMS jako dodatkowy kanał powiadomień.
 
 Architektura rozdziela publiczny kod, szablony i dane demonstracyjne od rzeczywistych danych właścicieli i zwierząt. Projekt służy również jako praktyczne laboratorium prywatności, bezpiecznych wdrożeń i integracji usług.
 
