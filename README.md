@@ -2,11 +2,11 @@
 
 **Technical Program Leader • AI Workflow Architecture & Agentic Systems • IT Governance • Digital Transformation**
 
-Projektuję i prowadzę systemy od problemu do działającej produkcji — łącząc zarządzanie programami IT, architekturę rozwiązań, governance i bezpieczeństwo z praktycznym tworzeniem oprogramowania, automatyzacji oraz human–AI workflows.
+Projektuję i prowadzę systemy od problemu do działającej produkcji — łącząc zarządzanie programami IT, architekturę rozwiązań, governance i bezpieczeństwo z praktycznym tworzeniem oprogramowania i automatyzacji.
 
 Mam ponad 20 lat doświadczenia w pełnym cyklu życia systemów informatycznych: od analizy potrzeb, wymagań, dokumentacji i wyboru wykonawców, przez wdrożenia i odbiory, po utrzymanie, rozwój, ciągłość działania i nadzór nad środowiskami produkcyjnymi.
 
-Równolegle buduję własne rozwiązania w Pythonie, Kotlinie, ESP-IDF i Bashu, pracuję z Linuxem, CI/CD, urządzeniami embedded i agentami AI. Projekty techniczne prowadzę w modelu GitHub-first: decyzja → kontrolowana implementacja → CI → review → walidacja produkcyjna lub fizyczna.
+Równolegle buduję własne rozwiązania w Pythonie, Kotlinie, ESP-IDF i Bashu, pracuję z Linuxem, CI/CD, urządzeniami wbudowanymi i agentami AI. Projekty techniczne prowadzę w modelu GitHub-first: decyzja → kontrolowana implementacja → CI → przegląd → walidacja produkcyjna lub fizyczna.
 
 **Warsaw, Poland · Polish · English C2**
 
@@ -21,14 +21,14 @@ Najlepiej odnajduję się tam, gdzie trzeba połączyć perspektywę biznesową,
 ## What I do
 
 - strategia IT, governance i transformacja cyfrowa;
-- zarządzanie projektami i programami oraz pełnym cyklem życia systemów;
-- AI adoption, human–AI workflows i agentic operating models;
+- zarządzanie projektami, programami i pełnym cyklem życia systemów;
+- wdrażanie AI oraz projektowanie kontrolowanej współpracy ludzi z agentami AI;
 - zarządzanie zespołami, interesariuszami, dostawcami, ryzykiem i zmianą;
 - wymagania, OPZ, kryteria wyboru wykonawców i dokumentacja zamówień publicznych;
 - architektura, integracje, wdrożenia, utrzymanie i rozwój systemów;
-- bezpieczeństwo, ciągłość działania, monitoring i operational readiness;
+- bezpieczeństwo, ciągłość działania, monitoring i przygotowanie operacyjne;
 - Linux, Python, Bash, GTK, Kotlin, Android TV, ESP32 i automatyzacja;
-- GitHub Actions, GitLab CI/CD, testy, release engineering i kontrolowane deploymenty;
+- GitHub Actions, GitLab CI/CD, testy, proces wydawniczy i kontrolowane wdrożenia;
 - NIS2/KSC, WCAG, UX oraz testowanie bezpieczeństwa aplikacji.
 
 ---
@@ -39,30 +39,21 @@ Najlepiej odnajduję się tam, gdzie trzeba połączyć perspektywę biznesową,
 
 Wskaźnik dla Ubuntu GNOME pokazujący wykorzystanie limitów OpenAI Codex i integrujący lokalne funkcje Codex z pulpitem Linux.
 
-Projekt obejmuje aplikację Python/GTK, klienta `codex app-server`, integrację Codex Remote Control, kontrolowane blokowanie uśpienia podczas aktywnej pracy, testy jednostkowe, GitHub Actions, paczki `.deb`, autostart GNOME, dokumentację oraz publiczne wydania.
+Najnowsze wydanie **v0.2.1** obejmuje aplikację Python/GTK, klienta `codex app-server`, Codex Remote Control, kontrolowane blokowanie uśpienia podczas aktywnego połączenia, testy jednostkowe, GitHub Actions i instalowalną paczkę `.deb`.
 
-Aplikacja nie odczytuje plików uwierzytelniających ani tokenów — korzysta z mechanizmów logowania zarządzanych przez Codex.
+Aplikacja nie odczytuje plików uwierzytelniających ani tokenów — korzysta z mechanizmów logowania zarządzanych przez Codex. Krótkotrwałe dane parowania nie są utrwalane ani logowane.
 
 [![Latest release](https://img.shields.io/github/v/release/lbudzynowski/codex-usage-tray)](https://github.com/lbudzynowski/codex-usage-tray/releases/latest)
 [![Tests](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml/badge.svg)](https://github.com/lbudzynowski/codex-usage-tray/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lbudzynowski/codex-usage-tray/blob/main/LICENSE)
-[![Ubuntu PPA](https://img.shields.io/badge/PPA-lbudzynowski%2Fapps-E95420?logo=ubuntu&logoColor=white)](https://launchpad.net/~lbudzynowski/+archive/ubuntu/apps)
-
-```bash
-sudo add-apt-repository ppa:lbudzynowski/apps
-sudo apt update
-sudo apt install codex-usage-tray
-```
 
 ### [Bhola Pulse](https://github.com/lbudzynowski/bhola-pulse)
 
 Animowany dashboard telemetryczny dla Ubuntu GNOME na Wayland/XWayland.
 
-Jeden długo działający provider w Pythonie zasila atomowy cache współdzielony przez instancje Conky. Projekt monitoruje między innymi CPU, RAM, temperatury, dyski, zasilanie, sieć, zaporę oraz lokalne usługi, zachowując celowo ograniczony i zredagowany zakres danych.
+Jeden długo działający proces w Pythonie zasila atomowy cache współdzielony przez instancje Conky. Projekt monitoruje między innymi CPU, RAM, temperatury, dyski, zasilanie, sieć, zaporę oraz lokalne usługi, zachowując celowo ograniczony i zredagowany zakres danych.
 
-Dostępne są dwa niezależne style: graficzny **LARGE SHARP** oraz terminalowy **NERD MODE**.
-
-Wydanie obejmuje testowaną paczkę `.deb`, konfigurację zgodną z XDG, testy Python/Bash, kontrolę SHA-256, GitHub Actions oraz publikację przez Ubuntu PPA.
+Dostępne są dwa niezależne style: graficzny **LARGE SHARP** oraz terminalowy **NERD MODE**. Wydanie obejmuje testowaną paczkę `.deb`, konfigurację zgodną z XDG, testy Python/Bash, kontrolę SHA-256, GitHub Actions oraz publikację przez Ubuntu PPA.
 
 [![Latest release](https://img.shields.io/github/v/release/lbudzynowski/bhola-pulse)](https://github.com/lbudzynowski/bhola-pulse/releases/latest)
 [![CI](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/lbudzynowski/bhola-pulse/actions/workflows/ci.yml)
@@ -90,61 +81,15 @@ sudo apt install bhola-pulse
 
 ---
 
-## AI & Agentic Engineering
-
-### Human–AI engineering operating model
-
-Projektuję i wykorzystuję model długotrwałej współpracy człowieka z agentami AI obejmujący ChatGPT, Codex, Google Drive, GitHub i kontrolowane środowiska wykonawcze.
-
-Model rozdziela planowanie, decyzje, wykonanie i walidację. Obejmuje między innymi:
-
-- GitHub jako źródło prawdy dla kodu;
-- kontrolowaną autonomię agentów;
-- jasno określone granice operacji i denylisty;
-- CI, review i walidację dokładnego SHA;
-- izolowane self-hosted runnery;
-- jawne bramki przed operacjami produkcyjnymi lub destrukcyjnymi;
-- przenoszenie kontekstu pomiędzy długotrwałymi sesjami bez powierzania agentowi nieograniczonego dostępu do całego środowiska.
-
-To nie jest eksperyment promptowy — model jest używany przy rzeczywistym rozwijaniu i utrzymywaniu kilku projektów software i infrastructure.
-
-### Continuity Bridge / ChatGPT Drive Archive
-
-Prywatny system context engineering dla długotrwałej współpracy z AI.
-
-Łączy pamięć kuratorską, wersjonowane przekazywanie stanu projektu i pełne archiwa rozmów. Eksporter Chrome MV3 pracuje fail-closed przy niejednoznacznym DOM i zachowuje strukturę wiadomości, provenance oraz integralność danych.
-
-Pakiety archiwalne wykorzystują wersjonowany `conversation.json`, katalogi assetów, manifesty SHA-256, pakiet ZIP oraz readback i ponowną weryfikację po zapisaniu.
-
-Celem nie jest tylko archiwizacja rozmów, ale utrzymywanie sprawdzalnej ciągłości pracy człowieka i agentów pomiędzy sesjami i projektami.
-
-### Muza / MUSE-01
-
-Modułowy projekt osobistej asystentki AI: obecnie aplikacja desktopowa dla Ubuntu, docelowo również niewielki fizyczny robot drukowany w 3D.
-
-Działający prototyp Muza Desktop wykorzystuje Python, GTK 4 i przenośny rdzeń aplikacji. Rozwój prowadzony jest GitHub-first, a automatyczne wykonanie odbywa się w kontrolowanym środowisku CI.
-
-Projekt świadomie rozdziela publiczny kod od prywatnych danych i zasobów oraz zakłada jawne sterowanie przyszłym dostępem do mikrofonu, kamery i głosu.
-
-### Guarded infrastructure automation
-
-W prywatnej infrastrukturze rozwijam kontrolowane workflow GitHub Actions i self-hosted runners służące do diagnostyki, deploymentów i fizycznych testów urządzeń.
-
-Stosowane mechanizmy obejmują między innymi minimalne uprawnienia, exact-SHA execution, niezależny readback, fail-closed validation, ograniczone operacje `sudo`, izolację sekretów oraz zakaz automatycznego powtarzania operacji, które mogłyby wywołać efekt fizyczny lub produkcyjny.
-
----
-
 ## Selected product & engineering work
 
 ### Storytel TV Player
 
 Nieoficjalny klient Android TV / Google TV do słuchania audiobooków Storytel, rozwijany i realnie testowany na Sony Bravia.
 
-Aplikacja obsługuje prawdziwe konto i półkę użytkownika, sterowanie pilotem, odtwarzanie przez AndroidX Media3 / ExoPlayer, przewijanie, synchronizację pozycji ze Storytel oraz powrót do półki.
+Aplikacja obsługuje prawdziwe konto i półkę użytkownika, sterowanie pilotem, natywne odtwarzanie przez AndroidX Media3 / ExoPlayer, przewijanie oraz dwukierunkową synchronizację pozycji ze Storytel.
 
-Warstwa bezpieczeństwa wykorzystuje Android Keystore i AES-256-GCM do ochrony trwałego materiału sesji; cleartext HTTP i backup danych aplikacji są wyłączone.
-
-Projekt przeszedł security hardening, Android lint, testy, GitHub Actions oraz proces stabilnego podpisywania release. Podpisana publiczna beta została fizycznie zainstalowana i zweryfikowana na Sony Bravia.
+Materiał sesji jest chroniony przez AES-256-GCM z kluczem w Android Keystore; cleartext HTTP i backup danych aplikacji są wyłączone. Projekt przeszedł utwardzanie bezpieczeństwa, Android lint, testy, GitHub Actions i proces stałego podpisywania wydań. Podpisana beta została fizycznie zainstalowana i zweryfikowana na Sony Bravia.
 
 **Technologie:** Kotlin · Jetpack Compose for TV · Media3 / ExoPlayer · Android Keystore · GitHub Actions
 
@@ -152,7 +97,7 @@ Projekt przeszedł security hardening, Android lint, testy, GitHub Actions oraz 
 
 Urządzenie oparte na ESP32-S3 i panelu e-paper 3,97″, zaprojektowane jako autonomiczny i energooszczędny dashboard Google Calendar.
 
-Fizycznie zwalidowany prototyp obejmuje provisioning Wi-Fi do NVS, NTP, pobieranie kalendarza przez certyfikatowo zweryfikowane HTTPS, ograniczony kontrakt JSON, renderer UTF-8 z polskimi znakami oraz bezpieczne dwuslotowe OTA.
+Fizycznie zwalidowany prototyp obejmuje konfigurację Wi-Fi zapisywaną w NVS, synchronizację czasu NTP, pobieranie kalendarza przez HTTPS z weryfikacją certyfikatu, ograniczony kontrakt JSON, renderer UTF-8 z polskimi znakami oraz bezpieczne dwuslotowe OTA.
 
 OTA sprawdza tożsamość projektu, wersję, rozmiar i SHA-256 obrazu, zapisuje aktualizację do nieaktywnego slotu i wykorzystuje rollback bootloadera w przypadku nieudanego uruchomienia.
 
@@ -162,31 +107,45 @@ OTA sprawdza tożsamość projektu, wersję, rozmiar i SHA-256 obrazu, zapisuje 
 
 ### QR-Audio
 
-Eksperymentalny system przechowywania rzeczywistych danych audio bezpośrednio w jednym lub wielu kodach QR — bez konieczności pobierania nagrania z Internetu podczas odtwarzania.
+Eksperymentalny system przechowywania danych audio bezpośrednio w jednym lub wielu kodach QR — bez pobierania nagrania z Internetu podczas odtwarzania.
 
 Androidowy klient wykorzystuje CameraX i lokalny model ML Kit do skanowania wielu części w dowolnej kolejności. Dane są składane, weryfikowane przez CRC32 i odtwarzane lokalnie.
 
-Projekt rozwinął własny format QRA1, encoder, binarny protokół, assembler oraz obsługę skanowania i odtwarzania binarnego QRA1.
+Projekt rozwinął własny format QRA1, generator kodów, protokół binarny, składanie wieloczęściowych danych oraz obsługę skanowania i odtwarzania binarnego QRA1.
 
-**Technologie:** Android · CameraX · ML Kit · binary protocol design · CRC32 · offline-first architecture
+**Technologie:** Android · CameraX · ML Kit · protokół binarny · CRC32 · działanie offline
 
 ### Yeti Smart Tag
 
 System identyfikatorów NFC dla psów połączonych z mobilnym profilem kontaktowym.
 
-Projekt obejmuje fizyczny NTAG213, modele OpenSCAD i druk 3D, responsywny profil internetowy, generator wielu profili, prywatny lokalny CRM oraz kontrolowany proces publikacyjny.
+Projekt obejmuje fizyczny NTAG213, modele OpenSCAD i druk 3D, responsywny profil internetowy, generator wielu profili, prywatny lokalny CRM w Pythonie/SQLite oraz kontrolowany proces publikacyjny z walidacją danych.
 
-Architektura celowo rozdziela publiczny kod, szablony i dane demonstracyjne od rzeczywistych danych właścicieli i zwierząt.
+Profil może — po świadomym użyciu funkcji **„Udostępnij lokalizację”** — pobrać położenie telefonu, pozwolić wybrać opiekuna i uruchomić ścieżkę powiadomienia SMS z lokalizacją znalazcy. Przepływ został sprawdzony na rzeczywistym telefonie: SMS dotarł po użyciu tej funkcji; samo otwarcie profilu nie wysyła wiadomości.
 
-Projekt służy również jako praktyczne laboratorium privacy-by-design, bezpiecznych deploymentów i integracji usług.
+Architektura rozdziela publiczny kod, szablony i dane demonstracyjne od rzeczywistych danych właścicieli i zwierząt. Projekt służy również jako praktyczne laboratorium prywatności, bezpiecznych wdrożeń i integracji usług.
 
-### Repo Security Scanner
+---
 
-Centralny, audit-only system cyklicznego sprawdzania bezpieczeństwa repozytoriów GitHub.
+## Jak pracuję z AI
 
-Oddziela skanowanie, agregację raportów i prezentację wyników, wykorzystuje raporty JSON/SARIF oraz narzędzia przypinane do konkretnych wersji.
+Nie traktuję AI jako generatora kodu działającego bez nadzoru. Projektuję cały proces współpracy człowieka z agentami: rozdzielam planowanie, decyzje, wykonanie i walidację, a autonomię ograniczam do jasno określonych granic.
 
-Założeniem jest fail-closed dla awarii samego narzędzia lub braku rzeczywistego pokrycia skanem — zielony workflow nie może oznaczać bezpieczeństwa, jeśli skaner faktycznie nie wykonał analizy.
+W praktyce oznacza to GitHub jako źródło prawdy dla kodu, małe i odwracalne zmiany, CI, przegląd różnic, walidację dokładnego SHA, izolowane środowiska wykonawcze i jawne bramki przed operacjami produkcyjnymi, destrukcyjnymi lub wywołującymi efekt fizyczny.
+
+### Continuity Bridge i pełne archiwum rozmów
+
+Continuity Bridge jest prywatnym systemem utrzymywania długotrwałej ciągłości pracy człowieka z AI. Rozdziela pamięć kuratorską od pełnych archiwów źródłowych i pozwala przenosić stan wielu projektów między kolejnymi rozmowami bez kopiowania wszystkiego do jednego promptu.
+
+Bieżąca metoda pełnej archiwizacji **nie opiera się na DOM-ie**. Pełna widoczna gałąź rozmowy jest zamieniana na kanoniczny `conversation.json`; oryginalne pliki trafiają do osobnych katalogów assetów. Pakiet otrzymuje manifest SHA-256 i ZIP, jest zapisywany na Google Drive, odczytywany ponownie i weryfikowany pod kątem sum kontrolnych oraz integralności. Końcowy stan jest zamykany terminalnym sealem, tak aby późniejszy komunikat nie zmienił zawartości już uznanego za kompletne archiwum.
+
+### Muza / MUSE-01
+
+Modułowy projekt osobistej asystentki AI: obecnie aplikacja desktopowa dla Ubuntu, docelowo również niewielki fizyczny robot drukowany w 3D.
+
+Działający prototyp Muza Desktop wykorzystuje Python, GTK 4 i przenośny rdzeń aplikacji. Integracje z API, mikrofonem, kamerą i audio nie są jeszcze deklarowane jako działające funkcje tego prototypu.
+
+Dla projektu działa również odizolowany self-hosted runner na miniPC: wykonuje testy Python/GTK i kontrolę granic środowiska bez dostępu do niepotrzebnych zasobów hosta. Projekt świadomie rozdziela publiczny kod od prywatnych danych i zasobów.
 
 ---
 
@@ -196,17 +155,7 @@ Założeniem jest fail-closed dla awarii samego narzędzia lub braku rzeczywiste
 
 Projekt przygotowania organizacji do wymagań NIS2/KSC prowadzony jako pełny program transformacyjny, a nie pojedynczy audyt zgodności.
 
-Zakres obejmuje między innymi:
-
-- analizę podstaw prawnych i luk;
-- governance i RACI;
-- architekturę programu i work breakdown structure;
-- rejestry ryzyka, aktywów i dowodów;
-- plan zespołu i odpowiedzialności;
-- budżet i harmonogram;
-- operational readiness;
-- przygotowanie procesów obsługi incydentów;
-- plan uruchomienia i operacjonalizacji wymaganych usług i kanałów współpracy.
+Zakres obejmuje analizę podstaw prawnych i luk, governance i RACI, strukturę programu, rejestry ryzyka, aktywów i dowodów, plan zespołu i odpowiedzialności, budżet, harmonogram, przygotowanie operacyjne oraz procesy obsługi incydentów i wymaganych kanałów współpracy.
 
 Szczegóły organizacyjne i materiały robocze pozostają prywatne.
 
@@ -229,7 +178,7 @@ Pracowałem między innymi przy:
 Poza własnymi repozytoriami zgłaszam odtwarzalne błędy, regresje, problemy dokumentacyjne i propozycje funkcji bezpośrednio do projektów, których używam.
 
 - **Chromium**
-  - #556290470 — regresja przewijania touchpadem w Chrome Canary; problem odizolowany do stanu profilu/Variations i zgłoszony wraz z reprodukcją oraz powiązaniem z istniejącą zmianą Chromium.
+  - [#556290470 — Chrome Canary touchpad scrolling regression](https://issues.chromium.org/issues/556290470) — problem odizolowany do stanu profilu/Variations i zgłoszony wraz z reprodukcją, obejściem oraz powiązaniem z istniejącym zgłoszeniem Chromium i odpowiadającą mu zmianą w kodzie.
 
 - **OpenAI / Codex**
   - [#38863 — Codex Desktop on Linux defaults spellcheck to en-US and flags Polish text as misspelled](https://github.com/openai/codex/issues/38863)
@@ -256,6 +205,10 @@ Poza własnymi repozytoriami zgłaszam odtwarzalne błędy, regresje, problemy d
 
 <details>
 <summary>Additional software, automation and infrastructure work</summary>
+
+### Repo Security Scanner
+
+Prywatny, centralny system audytu bezpieczeństwa repozytoriów. Obecny `main` obejmuje rzeczywisty pilot Gitleaks w modelu tylko do odczytu oraz kontrolę bezpieczeństwa zdalnych wdrożeń. Szerszy zestaw skanerów i uniwersalna bramka bezpieczeństwa wydań są rozwijane osobnymi zmianami i nie są przedstawiane jako ukończone funkcje.
 
 ### Put.io Skip Intro TV
 
@@ -285,7 +238,7 @@ Mini-PC based environment with Linux, containers, local reverse proxying, monito
 
 `Python` · `Bash` · `Linux` · `Ubuntu` · `GTK 3/4` · `Git` · `GitHub Actions` · `GitLab CI/CD` · `Docker` · `systemd` · `Redmine` · `FastAPI` · `Google Apps Script` · `Kotlin` · `Android TV` · `Jetpack Compose` · `ESP-IDF` · `ESP32-S3` · `OpenSCAD`
 
-**Engineering practices:** CI/CD · release engineering · code review · threat-aware design · SHA-256 provenance · fail-closed workflows · least privilege · automated testing · hardware validation · production readback
+**Praktyki inżynierskie:** CI/CD · proces wydawniczy · przegląd kodu · modelowanie zagrożeń · śledzenie pochodzenia artefaktów przez SHA-256 · fail-closed · minimalne uprawnienia · testy automatyczne · walidacja sprzętowa · niezależny odczyt kontrolny po wdrożeniu
 
 ## Contact
 
