@@ -86,6 +86,7 @@ sudo apt install bhola-pulse
 ### Storytel TV Player
 
 Nieoficjalny klient Android TV / Google TV do słuchania audiobooków Storytel, rozwijany i realnie testowany na Sony Bravia.
+
 Aplikacja obsługuje prawdziwe konto i półkę użytkownika, sterowanie pilotem, natywne odtwarzanie przez AndroidX Media3 / ExoPlayer, przewijanie oraz dwukierunkową synchronizację pozycji ze Storytel.
 
 Materiał sesji jest chroniony przez AES-256-GCM z kluczem w Android Keystore; cleartext HTTP i backup danych aplikacji są wyłączone. Projekt przeszedł utwardzanie bezpieczeństwa, Android lint, testy, GitHub Actions i proces stałego podpisywania wydań. Podpisana beta została fizycznie zainstalowana i zweryfikowana na Sony Bravia.
