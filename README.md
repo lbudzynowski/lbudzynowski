@@ -101,7 +101,11 @@ Fizycznie zwalidowany prototyp obejmuje konfigurację Wi-Fi zapisywaną w NVS, s
 
 OTA sprawdza tożsamość projektu, wersję, rozmiar i SHA-256 obrazu, zapisuje aktualizację do nieaktywnego slotu i wykorzystuje rollback bootloadera w przypadku nieudanego uruchomienia.
 
-![Działający dashboard Google Calendar na fizycznym prototypie e-paper. Wybrane dane zostały zredagowane.](assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp)
+<p align="center">
+  <a href="assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp">
+    <img src="assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp" alt="Działający dashboard Google Calendar na fizycznym prototypie e-paper. Wybrane dane zostały zredagowane." width="72%">
+  </a>
+</p>
 
 [Pełna historia projektu i galeria sprzętu →](projects/epaper-calendar-dashboard.md)
 
