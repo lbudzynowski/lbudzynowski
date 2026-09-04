@@ -103,7 +103,7 @@ OTA sprawdza tożsamość projektu, wersję, rozmiar i SHA-256 obrazu, zapisuje 
 
 <p align="center">
   <a href="assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp">
-    <img src="assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp" alt="Działający dashboard Google Calendar na fizycznym prototypie e-paper. Wybrane dane zostały zredagowane." width="72%">
+    <img src="assets/epaper-calendar-dashboard/live-calendar-battery-redacted.webp" alt="Działający dashboard Google Calendar na fizycznym prototypie e-paper. Wybrane dane zostały zredagowane." width="52%">
   </a>
 </p>
 
