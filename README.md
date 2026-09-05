@@ -109,6 +109,16 @@ OTA sprawdza tożsamość projektu, wersję, rozmiar i SHA-256 obrazu, zapisuje 
 
 [Pełna historia projektu i galeria sprzętu →](projects/epaper-calendar-dashboard.md)
 
+### Note20 Edge Vision
+
+Drugie życie Samsunga Galaxy Note20 Ultra 5G jako lokalnego węzła analizy obrazu AI. Stockowy Android zachował dostęp do kamery, ISP i kodeków, a ciężka ścieżka przetwarzania działała bezpośrednio na telefonie w Termuksie.
+
+Finalny pipeline: kamera H.264 → go2rtc → FFmpeg → persistent ncnn / MobileNet-SSD → smart motion gating → sprzętowe kodowanie H.264 przez Android MediaCodec → wynikowy RTSP. Dla wybranego ROI system pracował przy **10 FPS**, a cache znanych obiektów ograniczał niepotrzebne ponowne wywołania AI dla nieruchomych scen.
+
+W testach na rzeczywistym obrazie MobileNet-SSD rozpoznawał pojazdy zarówno w dzień, jak i w nocy. Kolorowe ramki rozróżniały nowe lub niestabilne obiekty, rozpoznane obiekty nieruchome oraz ruch przecinający obszar znanej detekcji. Końcowy lag użytkowy został oceniony jako znikomy.
+
+**Technologie:** Android · Termux · C++ · ncnn · MobileNet-SSD · FFmpeg · MediaCodec · go2rtc · RTSP
+
 ### QR-Audio
 
 Eksperymentalny system przechowywania danych audio bezpośrednio w jednym lub wielu kodach QR — bez pobierania nagrania z Internetu podczas odtwarzania.
