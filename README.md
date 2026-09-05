@@ -130,7 +130,12 @@ W testach na rzeczywistym obrazie MobileNet-SSD rozpoznawał **ludzi, samochody 
   </tr>
 </table>
 
-[▶ Obejrzyj krótkie demo wideo →](assets/note20-edge-vision/note20-edge-demo.mp4)
+<p align="center">
+  <video controls preload="metadata" poster="https://raw.githubusercontent.com/lbudzynowski/lbudzynowski/main/assets/note20-edge-vision/note20-edge-day.webp" width="100%">
+    <source src="https://raw.githubusercontent.com/lbudzynowski/lbudzynowski/main/assets/note20-edge-vision/note20-edge-demo.mp4" type="video/mp4">
+    <a href="assets/note20-edge-vision/note20-edge-demo.mp4">Obejrzyj krótkie demo wideo</a>
+  </video>
+</p>
 
 **Technologie:** Android · Termux · C++ · ncnn · MobileNet-SSD · FFmpeg · MediaCodec · go2rtc · RTSP
 
