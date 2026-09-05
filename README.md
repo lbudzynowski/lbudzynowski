@@ -109,6 +109,31 @@ OTA sprawdza tożsamość projektu, wersję, rozmiar i SHA-256 obrazu, zapisuje 
 
 [Pełna historia projektu i galeria sprzętu →](projects/epaper-calendar-dashboard.md)
 
+### Note20 Edge Vision
+
+Drugie życie Samsunga Galaxy Note20 Ultra 5G jako lokalnego węzła analizy obrazu AI. Stockowy Android zachował dostęp do kamery, ISP i kodeków, a ciężka ścieżka przetwarzania działała bezpośrednio na telefonie w Termuksie.
+
+Finalny pipeline: kamera H.264 → go2rtc → FFmpeg → persistent ncnn / MobileNet-SSD → smart motion gating → sprzętowe kodowanie H.264 przez Android MediaCodec → wynikowy RTSP. Dla wybranego ROI system pracował przy **10 FPS**, a cache znanych obiektów ograniczał niepotrzebne ponowne wywołania AI dla nieruchomych scen.
+
+W testach na rzeczywistym obrazie MobileNet-SSD rozpoznawał **ludzi, samochody i psa**, zarówno w dzień, jak i w nocy. Kolorowe ramki rozróżniały nowe lub niestabilne obiekty, rozpoznane obiekty nieruchome oraz ruch przecinający obszar znanej detekcji. Końcowy lag użytkowy został oceniony jako znikomy.
+
+<table>
+  <tr>
+    <td width="49%">
+      <a href="assets/note20-edge-vision/note20-edge-day.webp"><img src="assets/note20-edge-vision/note20-edge-day.webp" alt="Note20 Edge Vision — dzienny test detekcji i trackingu" width="100%"></a><br>
+      <sub><strong>Dzień</strong> — real-time detekcja i tracking na fizycznym Note20.</sub>
+    </td>
+    <td width="49%">
+      <a href="assets/note20-edge-vision/note20-edge-cow.webp"><img src="assets/note20-edge-vision/note20-edge-cow.webp" alt="Note20 Edge Vision — nocny false positive cow 25.0%" width="100%"></a><br>
+      <sub><strong>Noc</strong> — przykład false positive: <code>cow 25.0%</code>.</sub>
+    </td>
+  </tr>
+</table>
+
+[▶ Obejrzyj krótkie demo wideo →](assets/note20-edge-vision/note20-edge-demo.mp4)
+
+**Technologie:** Android · Termux · C++ · ncnn · MobileNet-SSD · FFmpeg · MediaCodec · go2rtc · RTSP
+
 ### QR-Audio
 
 Eksperymentalny system przechowywania danych audio bezpośrednio w jednym lub wielu kodach QR — bez pobierania nagrania z Internetu podczas odtwarzania.
